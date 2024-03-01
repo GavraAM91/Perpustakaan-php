@@ -1,0 +1,36 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: white;
+
+  height: 100%;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 30%; /* Adjust the width here */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-login h1 {
+  text-align: center;
+}
+
+.form-login input {
+  width: 150%;
+  margin-bottom: 10px;
+}
+
+.form-login button {
+  width: 100%;
+  margin-top: 10px;
+}

@@ -1,0 +1,132 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: white;
+  height: 100%;
+  font-weight: 700;
+}
+
+
+.table {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  margin-top: 20px;
+}   
+
+.top {
+margin-top: 50px;
+}
+
+h3 {
+font-family: 'Plus Jakarta Sans', sans-serif;
+float: left;
+margin-left: 70px;
+margin-bottom: 20px;
+justify-content: end;
+color: #343a40;
+}
+
+
+.tombol-opsi {
+float: right;
+margin-right: 70px;
+margin-bottom: 20px;
+justify-content: end;
+}
+
+.option {
+display: flex;
+justify-content: space-between;
+margin : 5px;
+}
+
+/* tombo;l bawah dan download*/
+.tombol_bawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 70px;
+}
+
+.right-button {
+  margin: 5px;
+}
+
+.left-button {
+  margin: 5px;
+}
+
+/*bagian form export data */
+.export_data {
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+
+
+.export_data h4 {
+  margin-bottom: 20px;
+}
+
+.export_data input {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.export_data .btn {
+  width: 80%;
+}
+
+/* Footer */
+.footer {
+color: #fff;
+margin-top: 20px;
+padding-top: 90px; 
+background-color: #212529;
+text-align: center;
+opacity: 0; /* Awalnya latar belakang footer tidak terlihat */
+transform: translateY(30px); /* Geser footer ke bawah sejauh 30px */
+animation: slide-up-background 0.5s ease forwards 0.3s; /* Gunakan animasi slide-up-background */
+position: relative;
+z-index: -1; /* Letakkan footer di bawah elemen lain */
+}
+
+
+.footer-text {  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Tampilkan teks footer saat class "show" ditambahkan */
+.footer-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Keyframes untuk animasi slide-up-background */
+@keyframes slide-up-background {
+to {
+  opacity: 1; /* Selesaikan animasi dengan opacity 1 */
+  transform: translateY(0); /* Geser footer kembali ke posisi awal */
+}
+}
+
+/* Keyframes untuk animasi slide-up-text */
+@keyframes slide-up-text {
+to {
+  opacity: 1; /* Selesaikan animasi dengan opacity 1 */
+}
+}
+
+img { 
+margin: 20px;
+width: 40px;
+height: 40px;
+}

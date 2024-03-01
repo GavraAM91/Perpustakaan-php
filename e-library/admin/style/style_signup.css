@@ -1,0 +1,34 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: white;
+    height: 100%;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form_reg {
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 30px;
+  }
+  
+  .form_reg h1 {
+    text-align: center;
+  }
+  
+  .form_reg input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form_reg button {
+    width: 80%;
+    margin-top: 10px;
+  }
+  
+  .submit {
+    text-align: center;
+  }

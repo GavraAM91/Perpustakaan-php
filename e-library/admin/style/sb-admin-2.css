@@ -1,0 +1,126 @@
+/* Sidebar ctyling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 230px;
+  background-color: #2e2e2e;
+  overflow-y: auto;
+  transition: width 0.2s ease-in-out;
+  z-index: 1;
+}
+
+/* Sidebar brand */
+.sidebar-brand {
+  height: 56px;
+  line-height: 56px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sidebar headings */
+.sidebar-heading {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.8rem;
+  color: #818181;
+  margin-bottom: 0.5rem;
+}
+
+/* Sidebar divider */
+.sidebar-divider {
+  margin: 0.5rem 0;
+  background-color: #818181;
+  height: 1px;
+}
+
+/* Sidebar items */
+.navbar-nav .nav-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Active sidebar item */
+.navbar-nav .nav-item.active {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Sidebar item link */
+.navbar-nav .nav-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Override hover effect for admin section and admin photo */
+.navbar-nav .nav-item.admin,
+.navbar-nav .nav-item.admin img {
+  pointer-events: none;
+}
+
+/* Hover over other sidebar items */
+
+/* Adjust the top margin for the fixed content */
+#content-wrapper {
+  margin-left: 230px;
+  transition: margin 0.2s ease-in-out;
+}
+
+/* Collapsed sidebar */
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Collapsed sidebar brand */
+.sidebar.collapsed .sidebar-brand {
+  text-align: center;
+}
+
+/* Collapsed sidebar item link */
+.sidebar.collapsed .navbar-nav .nav-item a {
+  padding: 0.5rem 0;
+}
+
+/* Media query for collapsing the sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.collapsed {
+    width: 230px;
+  }
+}
+
+/* Add these styles to your existing stylesheet */
+
+/* Sidebar Hover Styles */
+.navbar-nav li.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change the background color on hover */
+}
+
+.navbar-nav li.nav-item:hover a.nav-link {
+  color: #ffffff; /* Change the text color on hover */
+}
+
+/* Exclude Hover Styles for Main Content */
+#content-wrapper .navbar {
+  background-color: #ffffff; /* Change the background color of the navbar in the main content */
+}
+
+#content-wrapper .navbar-nav li.nav-item:hover {
+  background-color: transparent; /* No hover effect in the main content */
+}
+
+#content-wrapper .navbar-nav li.nav-item:hover a.nav-link {
+  color: #343a40; /* No hover effect on text color in the main content */
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #edf2f4;
+    height: 100%;
+
+}
+
+.logout-link {
+    position: absolute;
+    right: 0;
+}
+
+:root {
+    --blue: #48cae4;
+    --red: tomato;
+    --orange: orange;
+    --black: #2b2d42;
+    --white: #fff;
+    --bg-color: #eee;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid #999;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding-bottom: 5rem; */
+}
+
+section {
+    padding: 2rem;
+}
+
+
+.header {
+    background-color: #023047;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+.header .flex {
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a.logo {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: auto;
+    color: var(--white);
+}
+
+.header .flex .navbar a {
+    font-size: 20px;
+    margin-left: 2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header .flex .navbar a:hover {
+    color: yellow;
+}
+
+.header .flex .cart {
+    font-size: 20px;
+    margin-left: 2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.header .flex .cart:hover {
+    color: yellow;
+}
+
+.header .flex .cart span {
+    font-size: 50%;
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    color: #023047;
+}
+
+#menu-btn {
+    margin-left: 3rem;
+    font-size: 50px;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+}
+
+.top {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #caf0f8;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.top h1 {
+    margin-left: 70px;
+}
+
+.top p {
+    margin-left: 70px;
+    font-size: 100%;
+}
+
+
+.title-menu {
+    font-size: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container {
+    margin-left: 100px;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-weight: bolder;
+}
+
+.card-body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img.card-img-top {
+    width: 100%;
+    /* Set the width to 100% to fill the available space */
+    height: auto;
+    /* Allow the height to adjust automatically */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the container */
+    margin: 0 auto;
+}
+
+
+
+/* Footer */
+.footer {
+    color: #fff;
+    margin-top: 20px;
+    padding-top: 90px;
+    background-color: #212529;
+    text-align: center;
+    opacity: 0;
+    /* Awalnya latar belakang footer tidak terlihat */
+    transform: translateY(30px);
+    /* Geser footer ke bawah sejauh 30px */
+    animation: slide-up-background 0.5s ease forwards 0.3s;
+    /* Gunakan animasi slide-up-background */
+    position: relative;
+    z-index: -1;
+    /* Letakkan footer di bawah elemen lain */
+}
+
+
+.footer-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Tampilkan teks footer saat class "show" ditambahkan */
+.footer-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Keyframes untuk animasi slide-up-background */
+@keyframes slide-up-background {
+    to {
+        opacity: 1;
+        /* Selesaikan animasi dengan opacity 1 */
+        transform: translateY(0);
+        /* Geser footer kembali ke posisi awal */
+    }
+}
+
+/* Keyframes untuk animasi slide-up-text */
+@keyframes slide-up-text {
+    to {
+        opacity: 1;
+        /* Selesaikan animasi dengan opacity 1 */
+    }
+}
+
+img {
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+}
